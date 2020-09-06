@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,WAAW,EAAE,qBAAqB;EAClC,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,KAAK;EAClB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,OAAO;EACpB,cAAc,EAAE,MAAM;CACvB;;AACD,AAAA,cAAc,CAAC;EACb,KAAK,EAAE,mBAAmB;CAC3B;;AACD,AAAA,cAAc,CAAC;EACb,KAAK,EAAE,iBAAiB;CACzB;;AACD,AAAA,qBAAqB,CAAC;EACpB,KAAK,EAAE,mBAAmB;CAC3B",
+    "sources": [
+        "../sass/components/logo.scss"
+    ],
+    "names": [],
+    "file": "logo.css"
+}

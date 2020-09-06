@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+.container {
+  width: 1200px;
+  padding-left: 15 px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.flexbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flexbox-list {
+  display: flex;
+}
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+}
+.flexbox-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.team-section {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $backround-light;
+  padding: 94px 15px;
+}
+
+.advantage-box {
+  width: 270px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: $backround-light;
+}
+
+.advantage-lokator:before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url(../imagespage1/advantagephoto/lokator.svg);
+  background-position: 50% 50%;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-color: $backround-light;
+  margin-bottom: 30px;
+}
+.advantage-clock:before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url(../imagespage1/advantagephoto/clock.svg);
+  background-position: 50% 50%;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-color: $backround-light;
+  margin-bottom: 30px;
+}
+.advantage-diagram:before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url(../imagespage1/advantagephoto/diagram.svg);
+  background-position: 50% 50%;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-color: $backround-light;
+  margin-bottom: 30px;
+}
+
+.advantage-cosmo:before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-image: url(../imagespage1/advantagephoto/cosmo.svg);
+  background-position: 50% 50%;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-color: $backround-light;
+  margin-bottom: 30px;
+}
+.clients-box {
+  width: 170px;
+  height: 90px;
+  padding: 19px;
+  text-align: center;
+  background-color: $light-color;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function;
+}
+
+.center {
+  text-align: center;
+}
+
+.padding-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: $main-color;
+  margin-bottom: 0px;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $semidark-color;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}

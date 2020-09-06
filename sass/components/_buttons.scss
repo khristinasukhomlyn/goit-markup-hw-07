@@ -1,0 +1,100 @@
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: $accent-color;
+  color: $light-color;
+  padding: 10px 32px;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  margin-left: 20px;
+  transition: background-color 250ms $timing-function;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $light-color;
+    color: $accent-color;
+  }
+
+  &:hover .galka-icon {
+    fill: $accent-color;
+  }
+}
+
+.btn-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  display: flex;
+  text-align: center;
+  background-color: $accent-color;
+  color: $light-color;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-left: 495px;
+  margin-top: 44px;
+  transition: background-color 250ms $timing-function;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $light-color;
+    color: $accent-color;
+  }
+}
+
+.email-btn {
+  width: 357px;
+  height: 50px;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.emailbtn-text {
+  color: main-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
+}
+
+.portfoliobtn {
+  background-color: $semilight-color;
+  color: $semidark-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625em;
+  letter-spacing: 0.03em;
+  transition: color 250ms $timing-function;
+  border: 1px solid $semilight-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+  display: inline-block;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $light-color;
+  }
+}
+
+.galka-icon {
+  display: inline-flex;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $light-color;
+  transition: fill 250ms $timing-function;
+}

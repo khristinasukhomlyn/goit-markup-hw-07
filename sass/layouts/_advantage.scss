@@ -1,0 +1,17 @@
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $semidark-color;
+}
+
+.advantage-title-absolute {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 370px;
+  padding-top: 7px;
+  bottom: 0;
+}

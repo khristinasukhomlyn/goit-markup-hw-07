@@ -1,0 +1,73 @@
+.footer-box {
+  width: calc((100% - 30px) / 2);
+}
+.footer-width {
+  width: 1200px;
+}
+
+.adress-margin {
+  margin-top: 15px;
+}
+.e-mail-field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid;
+  border-color: var(--main-color);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-top: 15px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $accent-color;
+  }
+}
+.adress-footer-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: $light-color;
+  text-decoration: none;
+}
+.footer-section {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $background-color;
+  padding: 60 0 0 0;
+}
+.contacts-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.adress-box {
+  padding-top: 40px;
+}
+
+.join-us-box {
+  width: 206px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+  margin-left: 68px;
+}
+.sign-up-box {
+  width: 570px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+}

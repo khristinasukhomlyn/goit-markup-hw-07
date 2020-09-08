@@ -5,19 +5,16 @@
   background-color: $backround-light;
 }
 
-%title-style {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .advantage-title {
   @extend %title-style;
   color: $semidark-color;
 }
 
+.advantage-description {
+  @extend %text-style;
+  color: $main-color;
+  margin-bottom: 0px;
+}
 .advantage-lokator:before {
   content: " ";
   display: block;
@@ -66,4 +63,8 @@
   background-repeat: no-repeat;
   background-color: $backround-light;
   margin-bottom: 30px;
+}
+.advantage-title {
+  @extend %title-style;
+  color: $semidark-color;
 }

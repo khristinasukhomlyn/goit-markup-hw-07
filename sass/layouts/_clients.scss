@@ -7,18 +7,21 @@
   border: 1px solid $main-color;
   border-radius: 4px;
   transition: border-color 250ms $timing-function;
-   &:hover {
-  border-color: $accent-color;
- }
-   &:hover .client-icon {
-  fill: $accent-color;
- }
 }
+
+.clients-box:hover {
+  border-color: $accent-color;
+}
+
+.clients-box:hover .client-icon {
+  fill: $accent-color;
+}
+
+.clients-header {
+  @extend %header-style;
+}
+
 .client-icon {
   fill: $main-color;
   transition: fill 250ms $timing-function;
 }
-
-
-
-

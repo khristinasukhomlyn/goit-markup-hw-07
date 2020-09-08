@@ -1,16 +1,18 @@
-.margin-works:nth-child(-n + 3) {
-  margin-top: 34px;
-}
-.works-width {
-  width: calc((100% - 60px) / 3);
-}
 .works-box {
   width: 370px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-
   transition: box-shadow 250ms $timing-function;
 }
+
+.works-margin:nth-child(-n + 3) {
+  margin-top: 34px;
+}
+
+.works-width {
+  width: calc((100% - 60px) / 3);
+}
+
 .works-box:hover {
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
@@ -27,6 +29,9 @@
   padding: 20px 24px;
 }
 
+.works-header {
+  @extend %header-style;
+}
 .portfolio-link:hover .work-actions {
   opacity: 1;
 }

@@ -421,21 +421,23 @@ body {
   padding-bottom: 94px;
 }
 
-.section-description {
+.advantage-description {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714em;
   letter-spacing: 0.03em;
-  color: #757575;
-  margin-bottom: 0px;
 }
 
-.inline-block {
-  display: inline-block;
+.advantage-title, .product-title, .footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.section-title {
+.team-header, .clients-header, .contacts-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67em;
@@ -446,13 +448,8 @@ body {
   margin-top: 0px;
 }
 
-.advantage-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
+.inline-block {
+  display: inline-block;
 }
 
 .logo {
@@ -551,7 +548,7 @@ body {
   padding-bottom: 15px;
 }
 
-.menu {
+.menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,16 +571,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after, .menu-link:focus::after, .menu-link:enabled::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.menu-link:focus, .menu-link:hover, .menu-link:enabled {
-  color: #2196f3;
-}
-
-.menu-current::after {
+.current::after {
   content: "";
   position: relative;
   display: block;
@@ -592,6 +580,19 @@ body {
   border-radius: 4px;
   background-color: #2196f3;
   top: 32px;
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after,
+.menu-link:enabled::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.menu-link:focus,
+.menu-link:hover,
+.menu-link:enabled {
+  color: #2196f3;
 }
 
 .social-icons-link {
@@ -998,12 +999,12 @@ body {
   color: #2196f3;
 }
 
-.header {
+.page-header {
   padding: 30px 0 30px 30px;
   border-bottom: 1px solid #ececec;
 }
 
-.header-navigation {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1030,15 +1031,15 @@ body {
   font-size: 14px;
   line-height: 1.143em;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: #757575;
   text-decoration: none;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .contacts-list {
@@ -1073,8 +1074,6 @@ body {
   background-size: cover;
   height: 600px;
   padding: 200px 0;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .img {
@@ -1087,6 +1086,11 @@ body {
      object-position: top;
 }
 
+.boxhero {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .page-title {
   font-weight: 900;
   font-size: 44px;
@@ -1094,10 +1098,14 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--light-color);
   margin: 0 0 30px;
   margin: auto;
   width: 696px;
+}
+
+.white-title {
+  color: #ffffff;
 }
 
 .advantage-box {
@@ -1107,16 +1115,13 @@ body {
   background-color: #f5f4fa;
 }
 
-.advantage-title, .product-title, .footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .advantage-title {
   color: #212121;
+}
+
+.advantage-description {
+  color: #757575;
+  margin-bottom: 0px;
 }
 
 .advantage-lokator:before {
@@ -1169,6 +1174,10 @@ body {
   background-repeat: no-repeat;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+}
+
+.advantage-title {
+  color: #212121;
 }
 
 .product {
@@ -1244,6 +1253,11 @@ body {
   overflow: hidden;
 }
 
+.teammembers-box:hover {
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
 .img {
   display: block;
   max-width: 100%;
@@ -1252,11 +1266,6 @@ body {
 
 .team-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.teammembers-box:hover {
-  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .name-title {
@@ -1306,13 +1315,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer {
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #2f303a;
-  padding: 60 0 0 0;
-}
-
 .footer-box {
   width: calc((100% - 30px) / 2);
 }
@@ -1323,6 +1325,38 @@ body {
 
 .footer-title {
   color: #ffffff;
+}
+
+.footer-section {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2f303a;
+  padding: 60 0 0 0;
+}
+
+.adress-margin {
+  margin-top: 15px;
+}
+
+.adress-box {
+  padding-top: 40px;
+}
+
+.adress-footer-description, .contacts-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.adress-footer-description {
+  color: #ffffff;
+}
+
+.contacts-description {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .e-mail-field {
@@ -1347,28 +1381,16 @@ body {
   border-color: #2196f3;
 }
 
-.adress-footer-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714em;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.contacts-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714em;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.adress-box {
-  padding-top: 40px;
+.galka-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us-box {
@@ -1382,17 +1404,5 @@ body {
   width: 570px;
   margin-top: 72px;
   margin-bottom: 100px;
-}
-
-.galka-icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */

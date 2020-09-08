@@ -6,10 +6,9 @@
     ),
     url(../imagespage1/header.jpg);
   background-size: cover;
+
   height: 600px;
   padding: 200px 0;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .img {
@@ -19,7 +18,10 @@
   object-fit: cover;
   object-position: top;
 }
-
+.boxhero {
+  margin-right: auto;
+  margin-left: auto;
+}
 .page-title {
   font-weight: 900;
   font-size: 44px;
@@ -27,8 +29,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $light-color;
+  color: var(--light-color);
   margin: 0 0 30px;
   margin: auto;
   width: 696px;
+}
+.white-title {
+  color: $light-color;
 }

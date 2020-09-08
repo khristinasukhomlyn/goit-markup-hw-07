@@ -10,6 +10,13 @@
   border-radius: 4px;
   background-color: $light-color;
   overflow: hidden;
+  &:hover {
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.team-header {
+  @extend %header-style;
 }
 
 .img {
@@ -19,9 +26,6 @@
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
-}
-.teammembers-box:hover {
-  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .name-title {

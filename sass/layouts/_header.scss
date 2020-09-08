@@ -1,12 +1,12 @@
-.page-header {
+.header {
   padding: 30px 0 30px 30px;
-  border-bottom: 1px solid border-color;
-}
+  border-bottom: 1px solid $border-color;
 
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
+  &-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
 }
 .e-mail-link {
   margin-right: 30px;

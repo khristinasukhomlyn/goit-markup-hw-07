@@ -5,12 +5,16 @@
   background-color: $backround-light;
 }
 
-.advantage-title {
+%title-style {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.advantage-title {
+  @extend %title-style;
   color: $semidark-color;
 }
 

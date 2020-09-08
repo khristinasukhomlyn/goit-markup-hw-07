@@ -437,7 +437,7 @@ body {
   text-transform: uppercase;
 }
 
-.team-header, .clients-header, .contacts-header {
+.product-header, .team-header, .clients-header, .contacts-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67em;

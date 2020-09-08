@@ -29,9 +29,6 @@
   padding: 20px 24px;
 }
 
-.works-header {
-  @extend %header-style;
-}
 .portfolio-link:hover .work-actions {
   opacity: 1;
 }

@@ -548,6 +548,81 @@ body {
   color: #ffffff;
 }
 
+.page-header {
+  padding: 30px 0 30px 30px;
+  border-bottom: 1px solid border-color;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.e-mail-link {
+  margin-right: 30px;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contacts-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  text-decoration: none;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #2196f3;
+  top: 32px;
+}
+
+.contacts-link:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contacts-link .contacts-list {
+  font-style: normal;
+}
+
+.contacts-link .contacts-list:hover {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.contacts-link .mail-icon {
+  margin-right: 10px;
+  -webkit-transition: fill 250ms timing-function;
+  transition: fill 250ms timing-function;
+}
+
+.contacts-link .portfolio-link {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  text-decoration: none;
+}
+
+.contacts-link .current::after {
+  content: "";
+}
+
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +644,17 @@ body {
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  top: 32px;
 }
 
 .menu-link:hover::after,
@@ -726,81 +812,6 @@ body {
   color: #ffffff;
 }
 
-.page-header {
-  padding: 30px 0 30px 30px;
-  border-bottom: 1px solid border-color;
-}
-
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: auto;
-}
-
-.e-mail-link {
-  margin-right: 30px;
-}
-
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.contacts-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143em;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  text-decoration: none;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #2196f3;
-  top: 32px;
-}
-
-.contacts-link:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.contacts-link .contacts-list {
-  font-style: normal;
-}
-
-.contacts-link .contacts-list:hover {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
-.contacts-link .mail-icon {
-  margin-right: 10px;
-  -webkit-transition: fill 250ms timing-function;
-  transition: fill 250ms timing-function;
-}
-
-.contacts-link .portfolio-link {
-  font-family: "Roboto", sans-serif;
-  color: #757575;
-  text-decoration: none;
-}
-
-.contacts-link .current::after {
-  content: "";
-}
-
 .poftfolio-padding {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -908,14 +919,14 @@ body {
   width: 358px;
   height: 50px;
   border: 1px solid;
-  border-color: var(--main-color);
+  border-color: #757575;
   border-radius: 4px;
   background-color: transparent;
   margin-top: 15px;
   padding-top: 16px;
   padding-left: 16px;
   padding-bottom: 16px;
-  color: var(--main-color);
+  color: #757575;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25em;

@@ -71,3 +71,11 @@
   margin-top: 72px;
   margin-bottom: 100px;
 }
+.galka-icon {
+  display: inline-flex;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $light-color;
+  transition: fill 250ms $timing-function;
+}

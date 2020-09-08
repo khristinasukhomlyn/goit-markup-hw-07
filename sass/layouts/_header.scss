@@ -28,34 +28,35 @@
   color: var(--main-color);
   text-decoration: none;
   transition: color 250ms var(--timing-function);
-  
+
   &:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 
-.contacts-list {
-  font-style: normal;
+  .contacts-list {
+    font-style: normal;
 
- &:hover {
-  color: $accent-color;
-  fill: $accent-color;
- }
-}
+    &:hover {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
 
-.mail-icon {
-  margin-right: 10px;
-  transition: fill 250ms timing-function;
-}
+  .mail-icon {
+    margin-right: 10px;
+    transition: fill 250ms timing-function;
+  }
 
-.portfolio-link {
-  font-family: "Roboto", sans-serif;
-  color: $main-color;
-  text-decoration: none;
-}
+  .portfolio-link {
+    font-family: "Roboto", sans-serif;
+    color: $main-color;
+    text-decoration: none;
+  }
 
-.current::after {
-  content: "";
+  .current::after {
+    content: "";
+  }
   position: relative;
   display: block;
   width: 100%;

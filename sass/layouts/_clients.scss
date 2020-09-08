@@ -1,3 +1,14 @@
+.clients-box {
+  width: 170px;
+  height: 90px;
+  padding: 19px;
+  text-align: center;
+  background-color: $light-color;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function;
+}
+
 .client-icon {
   fill: $main-color;
   transition: fill 250ms $timing-function;

@@ -411,84 +411,6 @@ body {
   padding: 0 15px;
 }
 
-.team-section {
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #f5f4fa;
-  padding: 94px 15px;
-}
-
-.advantage-box {
-  width: 270px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-}
-
-.advantage-lokator:before {
-  content: " ";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url(../imagespage1/advantagephoto/lokator.svg);
-  background-position: 50% 50%;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-}
-
-.advantage-clock:before {
-  content: " ";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url(../imagespage1/advantagephoto/clock.svg);
-  background-position: 50% 50%;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-}
-
-.advantage-diagram:before {
-  content: " ";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url(../imagespage1/advantagephoto/diagram.svg);
-  background-position: 50% 50%;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-}
-
-.advantage-cosmo:before {
-  content: " ";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url(../imagespage1/advantagephoto/cosmo.svg);
-  background-position: 50% 50%;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-}
-
-.clients-box {
-  width: 170px;
-  height: 90px;
-  padding: 19px;
-  text-align: center;
-  background-color: #ffffff;
-  border: 1px solid #757575;
-  border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .center {
   text-align: center;
 }
@@ -584,13 +506,6 @@ body {
   text-decoration: none;
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #2196f3;
-  top: 32px;
 }
 
 .contacts-link:hover {
@@ -598,29 +513,25 @@ body {
   fill: var(--accent-color);
 }
 
-.contacts-link .contacts-list {
+.contacts-list {
   font-style: normal;
 }
 
-.contacts-link .contacts-list:hover {
+.contacts-list:hover {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.contacts-link .mail-icon {
+.mail-icon {
   margin-right: 10px;
   -webkit-transition: fill 250ms timing-function;
   transition: fill 250ms timing-function;
 }
 
-.contacts-link .portfolio-link {
+.portfolio-link {
   font-family: "Roboto", sans-serif;
   color: #757575;
   text-decoration: none;
-}
-
-.contacts-link .current::after {
-  content: "";
 }
 
 .menu-list {
@@ -885,20 +796,6 @@ body {
   padding: 20px 24px;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .portfolio-link:hover .work-actions {
   opacity: 1;
 }
@@ -909,6 +806,15 @@ body {
 
 .footer-width {
   width: 1200px;
+}
+
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
 }
 
 .adress-margin {

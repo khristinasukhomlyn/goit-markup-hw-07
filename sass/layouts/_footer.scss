@@ -4,13 +4,13 @@
 .footer-width {
   width: 1200px;
 }
-.advantage-title {
+.footer-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $semidark-color;
+  color: $light-color;
 }
 .adress-margin {
   margin-top: 15px;
@@ -38,6 +38,7 @@
     border-color: $accent-color;
   }
 }
+
 .adress-footer-description {
   font-style: normal;
   font-weight: normal;
